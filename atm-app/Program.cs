@@ -5,9 +5,6 @@
 // Console.ReadLine();
 
 using System;
-using System.Globalization;
-using System.Net;
-using System.Xml.Serialization;
 // object oriented programming
 public class CardHolder
 {
@@ -95,7 +92,7 @@ public class CardHolder
             // TODO: put in a try catch
             double deposit = Double.Parse(Console.ReadLine());
             currentUser.setBalance(deposit + currentUser.balance);
-            Console.WriteLine("Thank you for your deposit. Your new balance is: " + currentUser.getBalance())
+            Console.WriteLine("Thank you for your deposit. Your new balance is: " + currentUser.getBalance());
         }
 
         void withdraw(CardHolder currentUser)
@@ -139,7 +136,7 @@ public class CardHolder
                 // check against "database"
                 currentUser = cardHolders.FirstOrDefault(a => a.cardNum == debitCardNum);
                 if (currentUser != null) { break; }
-                else { Console.WriteLine("Card not recognized. Please try again.")};
+                else { Console.WriteLine("Card not recognized. Please try again.");}
             }
             catch
             {
@@ -155,7 +152,7 @@ public class CardHolder
                 userPin = int.Parse(Console.ReadLine());
                 // check against "database"
                 if (currentUser.getPin() == userPin) { break; }
-                else { Console.WriteLine("Incorrect pin. Please try again.")};
+                else { Console.WriteLine("Incorrect pin. Please try again.");};
             }
             catch
             {
@@ -163,7 +160,7 @@ public class CardHolder
             }
 
         }
-        Console.Write("Welcome " + currentUser.getFirstName() + ":)");
+        Console.Write("Welcome " + currentUser.getFirstName() + ":) ");
         int option = 0;
         do
         {
