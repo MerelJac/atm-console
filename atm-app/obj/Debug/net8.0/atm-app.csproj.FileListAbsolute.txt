@@ -1,0 +1,15 @@
+/Users/mereljacobs/Documents/atm-console/atm-console/atm-app/bin/Debug/net8.0/atm-app
+/Users/mereljacobs/Documents/atm-console/atm-console/atm-app/bin/Debug/net8.0/atm-app.deps.json
+/Users/mereljacobs/Documents/atm-console/atm-console/atm-app/bin/Debug/net8.0/atm-app.runtimeconfig.json
+/Users/mereljacobs/Documents/atm-console/atm-console/atm-app/bin/Debug/net8.0/atm-app.dll
+/Users/mereljacobs/Documents/atm-console/atm-console/atm-app/bin/Debug/net8.0/atm-app.pdb
+/Users/mereljacobs/Documents/atm-console/atm-console/atm-app/obj/Debug/net8.0/atm-app.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mereljacobs/Documents/atm-console/atm-console/atm-app/obj/Debug/net8.0/atm-app.AssemblyInfoInputs.cache
+/Users/mereljacobs/Documents/atm-console/atm-console/atm-app/obj/Debug/net8.0/atm-app.AssemblyInfo.cs
+/Users/mereljacobs/Documents/atm-console/atm-console/atm-app/obj/Debug/net8.0/atm-app.csproj.CoreCompileInputs.cache
+/Users/mereljacobs/Documents/atm-console/atm-console/atm-app/obj/Debug/net8.0/atm-app.sourcelink.json
+/Users/mereljacobs/Documents/atm-console/atm-console/atm-app/obj/Debug/net8.0/atm-app.dll
+/Users/mereljacobs/Documents/atm-console/atm-console/atm-app/obj/Debug/net8.0/refint/atm-app.dll
+/Users/mereljacobs/Documents/atm-console/atm-console/atm-app/obj/Debug/net8.0/atm-app.pdb
+/Users/mereljacobs/Documents/atm-console/atm-console/atm-app/obj/Debug/net8.0/atm-app.genruntimeconfig.cache
+/Users/mereljacobs/Documents/atm-console/atm-console/atm-app/obj/Debug/net8.0/ref/atm-app.dll
