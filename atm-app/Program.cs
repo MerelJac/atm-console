@@ -114,9 +114,74 @@ public class CardHolder
             }
         }
 
-        void balance(CardHolder currentUser){
+        void balance(CardHolder currentUser)
+        {
             Console.WriteLine("Current balance: " + currentUser.getBalance());
         }
+
+        // list of CardHolders - database
+        List<CardHolder> cardHolders = new List<CardHolder>();
+        cardHolders.Add(new CardHolder("1234567890", 1234, "John", "Griffith", 255.32));
+        cardHolders.Add(new CardHolder("5746372894", 2344, "Mimi", "Jacobs", 345.41));
+        cardHolders.Add(new CardHolder("6584920583", 2345, "Reagan", "Wallis", 876.54));
+        cardHolders.Add(new CardHolder("1989878973", 9876, "Dylan", "Scott", 52645.23));
+
+        // Promp user
+        Console.WriteLine("Welcome to your piggy bank");
+        Console.WriteLine("Please insert your debit card: ");
+        String debitCardNum = "";
+        CardHolder currentUser;
+        while (true)
+        {
+            try
+            {
+                debitCardNum = Console.ReadLine();
+                // check against "database"
+                currentUser = cardHolders.FirstOrDefault(a => a.cardNum == debitCardNum);
+                if (currentUser != null) { break; }
+                else { Console.WriteLine("Card not recognized. Please try again.")};
+            }
+            catch
+            {
+                Console.WriteLine("Card not recognized. Please try again.");
+            }
+        }
+        Console.WriteLine("Please enter your pin: ");
+        int userPin = 0;
+        while (true)
+        {
+            try
+            {
+                userPin = int.Parse(Console.ReadLine());
+                // check against "database"
+                if (currentUser.getPin() == userPin) { break; }
+                else { Console.WriteLine("Incorrect pin. Please try again.")};
+            }
+            catch
+            {
+                Console.WriteLine("Incorrect pin. Please try again.");
+            }
+
+        }
+        Console.Write("Welcome " + currentUser.getFirstName() + ":)");
+        int option = 0;
+        do
+        {
+            printOptions();
+            try
+            {
+                option = int.Parse(Console.ReadLine());
+            }
+            catch { }
+            if (option == 1) { deposit(currentUser); }
+            else if (option == 2) { withdraw(currentUser); }
+            else if (option == 3) { balance(currentUser); }
+            else if (option == 4) { break; }
+            else { option = 0; }
+        } while (option != 4);
+        Console.WriteLine("Thank you! Have a nice day.");
+
     }
+
 }
 
